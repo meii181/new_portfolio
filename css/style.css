@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile phone */
+@media (max-width: 480px){
+    .hamburger-menu {
+        display: block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        color: black;
+    }
+
+    body {
+        background-color: pink;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 767px){
+
+}
+
+/* Tablet portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
+
+
+/* Laptop and Desktop */
+@media (min-width: 1025px){
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        padding-top: 0.2rem;
+        padding-right: 1rem;
+        font-size: 30px;
+    }
+
+    .pages, 
+    .social_media{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .pages li {
+        padding-top: 0.2rem;
+        margin-left: 1.5rem;
+        font-size: 23px;
+    }
+
+    .social_media li {
+        margin-right: 4rem;
+        font-size: 30px;
+    }
+
+    .pages a {
+        text-decoration: none;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .circle {
+        background-color: grey;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+    }
+
+    .title{
+        font-size: 35px;
+        padding-bottom: 1rem;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+
+
+}
+
+/* Large screen
+@media (min-width: 1281px){
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        padding-right: 1rem;
+        font-size: 30px;
+    }
+
+    .pages, 
+    .social_media{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .pages li {
+        padding-top: 0.2rem;
+        margin-left: 1.5rem;
+        font-size: 23px;
+    }
+
+    .social_media li {
+        margin-right: 4rem;
+        font-size: 30px;
+    }
+
+    .pages a {
+        text-decoration: none;
+    }
+
+} */
