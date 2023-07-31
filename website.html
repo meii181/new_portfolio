@@ -8,13 +8,13 @@
 </head>
 <body>
     <!--Nav Bar-->
-    <nav>
+    <nav class="navigation">
         <ul class="pages">
             <li><a href="#">Projects</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-            <h1>Filoftea-Bianca Grecu</h1>
+            <h1 class="name">Filoftea-Bianca Grecu</h1>
             <ul class="social_media">
                 <li>
                     <a href=""><ion-icon name="logo-github"></ion-icon></a>
@@ -27,9 +27,32 @@
                 </li>
             </ul>    
         </nav>
+
+        <!--navigation bar for mobile phone + tablet-->
+        <header class="mobile-ver">
+            <h1 class="mobile-name">Filoftea-Bianca Grecu</h1>
         <button class="hamburger-menu">
             <div class="bar"></div> <!--no need of multiple divs, will use before and after in CSS-->
         </button>
+        <nav class="mobile-navigation">        
+            <ul class="mobile-pages">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+            <ul class="social_media-mobile">
+                <li>
+                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
+                </li>
+                <li>
+                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+                </li>
+                <li>
+                    <a href=""><ion-icon name="logo-gitlab"></ion-icon></a>
+                </li>
+            </ul> 
+        </nav>
+    </header>
 
             <!--Introduction-->
             <div class="welcome">
@@ -38,18 +61,26 @@
                 <p class="intro">Responsible for bringing a simple sketch to a live site web accessible to the whole world.</p>
             </div>
 
+            <div class="line"></div>
+
             <!--Websites-->
             <div class="container">
                 <h1 class="proj">Projects</h1>
                 <p class="descr_1">Originally from Romania, I do have background in Multimedia Design and Communication, with bachelor in Web Development, having interests towards web design and security, but also pursuing other activities outside of programming such as illustration and photography.
                 </p>
                 <div class="gallery">
+                    <div class="square_1"></div>
+                    <div class="square_1"></div>
+                    <div class="square_1"></div>
+                    <div class="square_1"></div>
+                    <div class="square_1"></div>
+                    <div class="square_1"></div>
+                    <!-- <img src="" alt="Coming soon">
                     <img src="" alt="Coming soon">
                     <img src="" alt="Coming soon">
                     <img src="" alt="Coming soon">
                     <img src="" alt="Coming soon">
-                    <img src="" alt="Coming soon">
-                    <img src="" alt="Coming soon">
+                    <img src="" alt="Coming soon"> -->
                 </div>
                 <div class="popup"></div>
             </div>
@@ -58,31 +89,33 @@
                 <h1 class="about_title">About me</h1>
                 <p class="descr_2">Originally from Romania, I do have background in Multimedia Design and Communication, with bachelor in Web Development, having interests towards web design and security, but also pursuing other activities outside of programming such as illustration and photography.
                 </p>
-                <img src="" alt="Coming soon">
+                <div class="square"></div>
+                <!-- <img src="" alt="Coming soon"> -->
             </div>
 
             <div class="contact">
                 <h1>Interested?</h1>
                 <p class="phrase">That's great to hear!</p>
                 <p class="paragraph_1">To get in contact with me, all you have to do is to type the essential details for keeping in touch...</p>
-                <p class="paragraph_2">...or, you can simply send a...</p>
-                <p class="info_1">email to: biancagrecu090@gmail.com</p>
-                <p class="info_2">or call to:  +45 53 33 73 77</p>
+                <div class="form_container"> <!-- for mobile and tablet version, to reverse the order -->
+                <p class="paragraph_2">...or, you can simply send a...<br>
+                    email to: <b>biancagrecu090@gmail.com</b><br>
+                    or call to: <b>+45 53 33 73 77</b>
+                </p>
+                
 
                     <form>
-                        <label>Name</label>
-                        <input type="text"></br>
-                        <label>Email</label>
-                        <input type="text"></br>
-                        <label>Phone Number</label>
-                        <input type="text"></br>
-                        <label>Message</label>
-                        <input type="text">
+                        <input type="text" placeholder="Name"><br>
+                        <input type="text" placeholder="Email"><br>
+                        <input type="text" placeholder="Phone Number"><br>
+                        <input type="text" placeholder="Message"><br>
+                        <button class="send">Send</button>
                     </form>
+                </div>
             </div>
 
             <div class="footer">
-                <p>&copy; 2023 Filoftea-Bianca Grecu</p>
+                <p class="copyright">&copy; 2023 Filoftea-Bianca Grecu</p>
             </div>
             
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
